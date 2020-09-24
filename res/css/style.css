@@ -1,5 +1,26 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+    background: royalblue;
+
+}
+
+div {
+
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+
+}
+
 .rating img {
 
+    width: 30px;
+    height: 30px;
     border: thick groove maroon;
     border-spacing: 5px;
     border-radius: 50%;
@@ -17,8 +38,5 @@ p {
     font-family: "Old English Text MT", serif;
     font-size: 50px;
 
-}
-body {
-    background: royalblue;
 }
 
