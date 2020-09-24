@@ -1,3 +1,16 @@
+img {
+
+    border: thick groove maroon;
+    border-spacing: 5px;
+
+}
+
+p {
+
+    font-family: "Old English Text MT", serif;
+    font-size: 50px;
+
+}
 body {
     background: royalblue;
 }
