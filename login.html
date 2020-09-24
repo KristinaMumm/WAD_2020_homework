@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <section>
+    <section class = "login-section">
         <div class="main-container">
             <div class="logo-container">
                 <img src="res/img/postit_logo.png" alt="postIt logo">
@@ -15,18 +15,26 @@
 
             <div class="text-container">
                 <h1>Welcome to postIt!</h1>
-                <a href="">Create an Account <br></a>
+                <a href=""><strong>Create an Account <br></strong></a>
                 <strong>Or <br></strong>
                 <strong>Please Log In <br></strong>
             </div>
 
             <div class="submit-form">
                 <form action="" method="post">
-                    <input type="text" name="Email" placeholder="Email">
-                    <input type="text" name="Password" placeholder="Password">
-                    <button type="button" name="button" onclick="location.href = 'index.html'">Log In</button>
+                    <div>
+                        <input type="text" name="Email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" name="Password" placeholder="Password">
+                    </div>
+                    <div>
+                        <button type="button" name="button" onclick="location.href = 'index.html'">Log In</button>
+                    </div>
+                    <div>
+                        <a href="">Forgot password?</a>
+                    </div>
                 </form>
-                <a href="">Forgot password?</a>
             </div>
         </div>
     </section>
