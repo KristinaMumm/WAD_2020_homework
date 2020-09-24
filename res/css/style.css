@@ -1,19 +1,50 @@
 html, body {
 
-    margin: 0;
-    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
     background: royalblue;
 
 }
 
-div {
+body section {
 
+    height: 100%;
     display: flex;
     background-color: #ffffff;
     align-items: center;
-    height: 30px;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.post {
+
+    height: auto;
+    width: 800px;
+    background-color: darkgray;
     flex-grow: 4;
-    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3%;
+    box-shadow: 0px 1px darkslategray;
+
+}
+
+.content img {
+
+    width: 800px;
+
+}
+
+.header {
+
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+.date {
+
+    margin-left: 590px;
 
 }
 
@@ -21,15 +52,23 @@ div {
 
     width: 30px;
     height: 30px;
-    border: thick groove maroon;
-    border-spacing: 5px;
+    margin: 0px;
+    border: 3px groove maroon;
+    border-radius: 50%;
+
+}
+.header img {
+
+    margin: 5px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 
 }
 
 .rating img:hover {
 
-    box-shadow: 0px 10px 10px maroon;
+    box-shadow: 0px 5px 10px maroon;
 
 }
 
@@ -40,3 +79,9 @@ p {
 
 }
 
+.date {
+
+    font-family: "Old English Text MT", serif;
+    font-size: 20px;
+
+}
