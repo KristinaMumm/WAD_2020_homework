@@ -1,20 +1,18 @@
 html, body {
 
-    margin-left: 5%;
-    margin-right: 5%;
     background: royalblue;
 
 }
 
-body section {
+.feed {
 
     height: 100%;
     display: flex;
     background-color: #ffffff;
     align-items: center;
     flex-direction: column;
-    margin: auto;
-    box-shadow: 5px black;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -93,20 +91,31 @@ p {
 /* Login style */
 
 .login-section {
+
+    background-color: #ffffff;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+    margin-left: 21%;
     margin-top: 10%;
-    height: 600px;
-    width: 65%;
+    margin-bottom: 10%;
+    font-family: "Old English Text MT", serif;
+    font-size: 20px;
+
 }
 
 .logo-container {
-    width: 100px;
-    height: 100px;
-    
+
+    width: 70px;
+    height: 70px;
     
 }
 
 .logo-container > img {
-    size: 50%;
+
+    height: 200px;
+    width: 200px;
+
 }
 
 .text-container {
