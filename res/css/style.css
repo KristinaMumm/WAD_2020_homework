@@ -1,12 +1,57 @@
-html, body {
+body {
 
     background: royalblue;
+    margin: 0;
+}
 
+
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav div{
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+}
+
+.nav div img {
+    height: 100%;
+}
+.nav div.search-container > input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+}
+.nav div.search-container > button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 20%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #e0e0e0;
 }
 
 .feed {
-
-    height: 100%;
+    margin-top: 50px;
     display: flex;
     background-color: #ffffff;
     align-items: center;
@@ -19,18 +64,15 @@ html, body {
 .post {
 
     height: auto;
-    width: 800px;
     background-color: darkgray;
     flex-grow: 4;
     margin-top: 20px;
     border-radius: 3%;
-    box-shadow: 0px 1px darkslategray;
+    box-shadow: 0 0 10px darkslategray;
 
 }
 
 .content img {
-
-    width: 800px;
 
 }
 
@@ -41,26 +83,11 @@ html, body {
 
 }
 
-.date {
-
-    margin-left: 590px;
-
-}
-
 .rating img {
 
-    width: 30px;
-    height: 30px;
-    margin: 0px;
+    width: 50px;
+    height: 50px;
     border: 3px groove maroon;
-    border-radius: 50%;
-
-}
-.header img {
-
-    margin: 5px;
-    width: 30px;
-    height: 30px;
     border-radius: 50%;
 
 }
@@ -68,6 +95,22 @@ html, body {
 .rating img:hover {
 
     box-shadow: 0px 5px 10px maroon;
+
+}
+
+.rating button {
+    background-color: Transparent;
+    padding: 0 0 1% 1%;
+    border: none;
+
+}
+
+.header img {
+
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 
 }
 
@@ -82,10 +125,10 @@ p {
 
     font-family: "Old English Text MT", serif;
     font-size: 20px;
+    color: gray;
+    text-align: left;
 
 }
-
-
 
 
 /* Login style */
