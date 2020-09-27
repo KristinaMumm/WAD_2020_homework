@@ -6,7 +6,7 @@ body {
 
 
 
-.nav {
+#nav {
     display: flex;
     position: fixed;
     top: 0;
@@ -22,16 +22,16 @@ body {
     text-align: left;
 }
 
-.nav div{
+#nav div{
     height: 30px;
     flex-grow: 4;
     padding: 10px;
 }
 
-.nav div img {
+#nav div img {
     height: 100%;
 }
-.nav div.search-container > input {
+#nav div.search-container > input {
     box-sizing: border-box;
     height: 30px;
     width: 80%;
@@ -39,7 +39,7 @@ body {
     padding: 5px;
     border: 1px solid #e0e0e0;
 }
-.nav div.search-container > button {
+#nav div.search-container > button {
     box-sizing: border-box;
     height: 30px;
     width: 20%;
@@ -48,18 +48,24 @@ body {
     border: 1px solid #e0e0e0;
     cursor: pointer;
     background-color: #e0e0e0;
+    font-family: "Old English Text MT", serif;
+}
+
+#nav ~ .feed {
+    background-color: #ffffff;
 }
 
 
 .feed {
     margin-top: 50px;
     display: flex;
-    background-color: #ffffff;
+    /*background-color: #ffffff; mainitud ka #nav ~ .feed juures, too koduse töö jaoks */
     align-items: center;
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
 }
+
 
 .feed > div {
     width: 80%;
@@ -68,21 +74,24 @@ body {
     flex-grow: 4;
     margin-top: 20px;
     border-radius: 3%;
-    box-shadow: 0 0 10px darkslategray;
+    box-shadow: 0 0 20px darkslategray;
 
-
-}
-
-.header {
-
-    align-items: flex-start;
-    flex-direction: row;
 
 }
 
 .post p {
     margin: 10px;
+}
 
+.header {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.user_profile_img {
+    align-content: flex-end;
 }
 
 .content {
@@ -134,10 +143,10 @@ p {
 
     font-family: "Old English Text MT", serif;
     font-size: 50px;
-
 }
 
-.date {
+
+img + .date { /* same as just .date*/
 
     font-family: "Old English Text MT", serif;
     font-size: 20px;
@@ -194,3 +203,4 @@ form > div {
     margin: auto;
     text-align: center;
 }
+
